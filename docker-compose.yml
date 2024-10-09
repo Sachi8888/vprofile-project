@@ -39,7 +39,8 @@ services:
     build: ./Docker-files/web
     image: sachi0608/vprofileweb
     container_name: vproweb
-    ports: -"80:80"
+    ports:
+      - "80:80"
 
 volumes:
   vprodbdata: {}
